@@ -13,34 +13,42 @@ The provided code is in the python language. It assumes that numpy, scipy, and A
 
 # Installation
 
-Compile the c extension with the following command
+Compile the c extension with the following command:
 
+```
 python setup.py build_ext --inplace
+```
 
-This should result in two modules named _cGBUtils.so and _cPolyUtils.so
+This should result in two modules named `_cGBUtils.so` and `_cPolyUtils.so`
 
 # Testing
 
-A sample use of the code is provided in the file test.py Run it with the 
-following command
+A sample use of the code is provided in the file `test.py`  
+Run it with the following command:
 
+```
 python test.py
+```
 
-This should create the following files
+This should create the following files:
 
-testGB_1Periodic.cfg
-testGB_1Periodic.pdb
-testGB_1Periodic.lammps
+testGB_1Periodic.cfg  
+testGB_1Periodic.pdb  
+testGB_1Periodic.lammps  
 
-testGB_2Periodic.cfg
-testGB_2Periodic.pdb
-testGB_2Periodic.lammps
+testGB_2Periodic.cfg  
+testGB_2Periodic.pdb  
+testGB_2Periodic.lammps  
 
-testPoly_2Periodic.cfg
-testPoly_2Periodic.pdb
-testPoly_2Periodic.lammps
+testPoly_2Periodic.cfg  
+testPoly_2Periodic.pdb  
+testPoly_2Periodic.lammps  
 
-which contain the generated 1 periodic GB, 2 periodic GB, and the polycrystal in cfg, pdb and lammps data format, respectively. 
+testGenGraphitePolyCrystal.dat  
+testGenGraphitePolyCrystal.pdb  
+testGenGraphitePolyCrystal.lammps  
+
+which contain the generated 1 periodic GB, 2 periodic GB, and the polycrystal in cfg, pdb and lammps data format, respectively.  The graphite polycrystalline structure is saved to the testGenGraphitePolyCrystal files (dat, pdb and lammps data format).
 
 
 # Usage
