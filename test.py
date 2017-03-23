@@ -2,6 +2,7 @@ import grainBdr as gb
 import polyCrystal as pc
 import ase.io
 import numpy
+import GenGraphitePolyCrystal as gpc
 
 cr = gb.onePeriodicGB(N1=[1,2],N2=[2,1],cell_width=100,verbose=False)
 ase.io.write('testGB_1Periodic.pdb',cr)
@@ -19,3 +20,8 @@ ase.io.write('testPoly_2Periodic.pdb',cr)
 ase.io.write('testPoly_2Periodic.cfg',cr)
 gb.writeLammpsData(cr,'testPoly_2Periodic.lammps')
 
+
+cr = gpc.GenGraphitePolyCrystal(num_voronoi=4, slab_thickness=8)
+ase.io.write('testGenGraphitePolyCrystal.pdb',cr)
+gpc.writeLBOMDData(cr,'testGenGraphitePolyCrystal.dat')
+gb.writeLammpsData(cr,'testGenGraphitePolyCrystal.lammps')

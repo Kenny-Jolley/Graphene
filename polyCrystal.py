@@ -212,7 +212,7 @@ def periodicVoronoiCell(a=1.3968418, L=numpy.array([10, 10]), N=10, cType='tr', 
         gn += 1
         p0 = numpy.array([x1, y1, z1])
         p = copy.copy(orgPos)
-        p = numpy.dot(v, p.T).T
+        p = numpy.matmul(v, p.T).T
         p += p0  # Center the crystal at the center of the grain
         # Choose all in the big box
         p = p[numpy.logical_and(*[numpy.logical_and(p[:, i] > -L[i], p[:, i] <= 2 * L[i]) for i in range(2)])]

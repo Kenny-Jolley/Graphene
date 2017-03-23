@@ -200,7 +200,7 @@ static PyObject *cPolyUtils_closest(PyObject *self, PyObject *args)
 
 	int nP1 = PyArray_SIZE(p1_x_arr);
 	int nP2 = PyArray_SIZE(p2_x_arr);
-	int nInd = PyArray_SIZE(ind_out_arr);
+//	int nInd = PyArray_SIZE(ind_out_arr);
 
 	int iP1 = 0, iP2 = 0;
 	for(iP1 =0; iP1<nP1; iP1++)
