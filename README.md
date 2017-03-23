@@ -7,7 +7,7 @@ Report any bugs/issues to shekhawat.ashivni@gmail.com
 
 # Prerequisites
 
-The provided code is in the python language. It assumes that numpy, scipy, and ASE (https://wiki.fysik.dtu.dk/ase/) are installed 
+The provided code is in the python language. It assumes that [NumPy](http://www.numpy.org/), [SciPy](http://www.scipy.org/), and ASE (https://wiki.fysik.dtu.dk/ase/) are installed 
 (as well as some other standard python packages). 
 
 
