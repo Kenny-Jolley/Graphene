@@ -84,3 +84,19 @@ Crystals with randomly oriented hexagonal grains, with the size of the hexagon g
 cr = pc.periodicHexagonalCrystal(h=h,r=(r,r))
 ```
 
+### Graphite polycrystals
+
+Similary, the module to generate graphite polycrystals can be used as:
+
+```python
+import GenGraphitePolyCrystal as gpc
+```
+To generate a graphite polycrystal with size 150x150 angstroms with 8 graphene layers, and 4 grains (randomly oriented and positioned) use the following command:
+```python
+cr = gpc.GenGraphitePolyCrystal(slab_thickness=8,num_voronoi=4,box_x=150,box_y=150)
+```
+See the file `GenGraphitePolyCrystal.py` for the full list of keyword arguments that can be set.
+
+
+
+
