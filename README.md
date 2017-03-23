@@ -5,6 +5,9 @@ Cite as
 
 Report any bugs/issues to shekhawat.ashivni@gmail.com
 
+Graphite script can be additionally cited as:
+* Ben Maerz, Kenny Jolley,  Carbon 2017  TO BE SUBMITTED SHORTLY
+
 # Prerequisites
 
 The provided code is in the python language. It assumes that [NumPy](http://www.numpy.org/), [SciPy](http://www.scipy.org/), and ASE (https://wiki.fysik.dtu.dk/ase/) are installed 
@@ -50,6 +53,13 @@ testGenGraphitePolyCrystal.lammps
 
 which contain the generated 1 periodic GB, 2 periodic GB, and the polycrystal in cfg, pdb and lammps data format, respectively.  The graphite polycrystalline structure is saved to the testGenGraphitePolyCrystal files (dat, pdb and lammps data format).
 
+The `GenGraphitePolyCrystal.py` file can also be run directly with:
+
+```
+python GenGraphitePolyCrystal.py
+```
+
+to generate a default graphite polycrystal structure.
 
 # Usage
 
