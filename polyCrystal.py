@@ -330,7 +330,7 @@ def periodicVoronoiCell(a=1.3968418, L=numpy.array([10, 10]), N=10, cType='tr', 
     cr.orgs = orgs
     cr.rattlable = rattlable
     if sum(tags == 0) == 0 or sum(tags == 1) == 0 or sum(tags == 2) == 0:
-        print "It seems that either the cell is too small or there are too many grains. You might want to fix this"
+        print("It seems that either the cell is too small or there are too many grains. You might want to fix this")
     return cr
 
 
@@ -407,7 +407,7 @@ def cvtRelax(gr, **kwargs):
         bdry[bdry[:, 1] >= gr.cell[1, 1], 1] -= gr.cell[1, 1]
 
     if verbose:
-        print "Iteration ended with maxUpd = %f, itNum = %d" % (maxUpd, itNum)
+        print("Iteration ended with maxUpd = " + str(maxUpd) + ", itNum = " + str(itNum) )
 
     # choose those in box
     # Z = Z[ numpy.logical_and(* [ numpy.logical_and(Z[:,i]>=0, Z[:,i] <= gr.cell[i,i]) for i in range(2) ] )]
